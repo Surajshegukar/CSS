@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .box{
+        background-color: skyblue;
+        width: 50px;
+        height: 60px;
+        position: relative;
+
+        /* animation SHort hand */
+
+        /* animation:animation-name duration timing-function iteration direction */
+
+        animation-name: loading;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-fill-mode: alternate;
+        animation-timing-function: ease-in;
+        /* animation-direction: reverse; */
+         
+
+    }
+    .box2{
+        background-color: blue;
+        width: 50px;
+        height: 60px;
+        position: relative;
+        animation-name: loading2;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-fill-mode: alternate;
+        animation-timing-function: ease-in;
+        /* animation-direction: reverse; */
+         
+
+    }
+    @keyframes loading2 {
+        0%{
+            top: 0px;
+            left: 0px;
+            
+        }
+        25%{
+            top:0px;
+            left:250px;
+        }
+        50%{
+            left: 250px;
+            top: 250px;
+        }
+        75%{
+            top:250px;
+            left: 0;
+        }
+        100%{
+            top: 0px;
+            left: 0px;
+        }
+        
+    }
+    @keyframes loading {
+        form{
+            width: 50px;
+        }
+        to{
+            width: 400px;
+        }
+        
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="box">
+            <p>Box1</p>
+        </div>
+        <div class="box2">
+            box2
+        </div>
+    </div>
+</body>
+</html>

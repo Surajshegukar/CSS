@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        height: 300px;
+        width: 100%;
+        border: 1px solid black;
+        display: flex;
+        flex-wrap: wrap;
+        overflow: auto;
+        justify-content:space-evenly;
+              
+        
+    }
+    .item{
+        background-color: skyblue;
+        border: 2px solid black;
+        margin: auto;
+        text-align: center;
+        width: 200px;
+        height: 100px;
+        border-radius: 5px;
+        
+    
+    }
+    @media (max-width:620px){
+        .item{
+            margin-bottom: 10px;
+            
+        }
+        .container{
+            height: 600px;
+        }
+        
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="item" id="item-1">Box</div>
+        <div class="item" id="item-2">Box</div>
+        <div class="item" id="item-3">Box</div>
+        <div class="item" id="item-4">Box</div>
+        <div class="item" id="item-5">Box</div>
+        <div class="item" id="item-6">Box</div>
+    </div>
+</body>
+</html>

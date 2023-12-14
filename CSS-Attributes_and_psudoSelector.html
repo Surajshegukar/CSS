@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        border: 1px solid black;
+        width: 300px;
+        height: 200px;
+        position: relative;
+        top: 200px;
+        left:35%;
+        border-radius: 9px;
+    }
+    .form-control{
+        display: flex;
+        flex-direction: column;
+        margin:auto;   
+    }
+    input{
+        margin: auto;
+        margin-bottom: 10px;
+        border: 2px solid ;
+        text-align: center;
+        width: 130px;
+    }
+    input[type="text"]{
+        border-color: skyblue;
+    }
+    input[type="password"]{
+        border-color: tomato;
+    }
+    p{
+        text-align: center;
+    }
+    button{
+        width: 70px;
+        margin: auto;
+        margin-top: 10px;
+        background-color: aliceblue;
+    }
+
+</style>
+<body>
+    <div class="container">
+        <form action="" class="form-control">
+            <p>Login</p>
+            <input type="text" placeholder="Username">
+            <input type="password" placeholder="Password">
+            <button>Submit</button>
+        </form>
+    </div>
+    
+</body>
+</html>
